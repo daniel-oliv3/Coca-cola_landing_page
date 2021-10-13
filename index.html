@@ -5,13 +5,14 @@
     <title>Coca-Cola Landing Page</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   </head>
   <body>
     <section>
       <div class="circle"></div>
         <header>
           <a href="#"><img src="images/logo.png" class="logo"></a>
+          <div class="toggle" onclick="toggleMenu()"></div>
             <ul class="navigation">
               <li><a href="#">Página Inicial</a></li>
               <li><a href="#">Cardápio</a></li>
@@ -31,7 +32,7 @@
         </div>
 
         <div class="imgBox">
-          <div class="swiper-container">
+          <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img src="images/cocacola1.png"></div>
               <div class="swiper-slide"><img src="images/cocacola2.png"></div> 
@@ -42,8 +43,8 @@
             </div>
           </div>
         </div>
-
       </div>
+
       <ul class="sci">
         <li><a href="#"><img src="images/facebook.png"></a></li>
         <li><a href="#"><img src="images/twitter.png"></a></li>
@@ -52,6 +53,34 @@
     </section>
 
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        loop:true,
+      });
+
+      function toggleMenu(){
+          const menuToggle = document.querySelector('.toggle');
+          const navigation = document.querySelector('.navigation');
+          menuToggle.classList.toggle('active')
+          navigation.classList.toggle('active')
+      }
+
+
+    </script>
   </body>
 </html>
