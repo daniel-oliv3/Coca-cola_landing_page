@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="shortcut icon" href="images/favicon.png" />
-    <title>Coca-Cola Landing Page</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  </head>
-  <body>
-    <section>
-      <div class="circle"></div>
-        <header>
-          <a href="#"><img src="images/logo.png" class="logo"></a>
-          <div class="toggle" onclick="toggleMenu()"></div>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="imgs/favicon.png" />
+        <title>Coca Cola Website Landing Page</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+   <section>
+      <div class="circle"> </div> 
+      <header>
+         <a href="#"><img src="images/logo.png" class="logo"></a>
+         <div class="toggle" onclick="toggleMenu()"></div>
             <ul class="navigation">
-              <li><a href="#">Página Inicial</a></li>
-              <li><a href="#">Cardápio</a></li>
-              <li><a href="#">O Que Há de Novo</a></li>
-              <li><a href="#">Contato</a></li>
+               <li><a href="#">Início</a></li>
+               <li><a href="#">Menu</a></li>
+               <li><a href="#">Novidades</a></li>
+               <li><a href="#">Contato</a></li>
             </ul>
-        </header>
-      <div class="content">
-        <div class="textBox">
-          <h2>Saborear a sensação</h2>
-          <p>Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Sapien 
-            in monti palavris qui num significa nadis i pareci latim. Viva Forevis 
-            aptent taciti sociosqu ad litora torquent. Quem manda na minha terra 
-            sou euzis!
-          </p>
-          <a href="#">Saber mais</a>
-        </div>
+      </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Saborear a sensação</h2>
+                    <p>Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Sapien 
+                      in monti palavris qui num significa nadis i pareci latim. Viva Forevis 
+                      aptent taciti sociosqu ad litora torquent. Quem manda na minha terra 
+                      sou euzis!
+                    </p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+                <div class="imgBox">
 
-        <div class="imgBox">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/cocacola1.png"></div>
-              <div class="swiper-slide"><img src="images/cocacola2.png"></div> 
-              <div class="swiper-slide"><img src="images/cocacola3.png"></div> 
-              <div class="swiper-slide"><img src="images/cocacola4.png"></div> 
-              <div class="swiper-slide"><img src="images/cocacola5.png"></div> 
-              <div class="swiper-slide"><img src="images/cocacola6.png"></div>  
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/cocacola1.png"></div>
+                            <div class="swiper-slide"><img src="images/cocacola2.png"></div>
+                            <div class="swiper-slide"><img src="images/cocacola3.png"></div>
+                            <div class="swiper-slide"><img src="images/cocacola4.png"></div>
+                            <div class="swiper-slide"><img src="images/cocacola5.png"></div>
+                            <div class="swiper-slide"><img src="images/cocacola6.png"></div>
+                        </div>
+                      </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <ul class="sci">
-        <li><a href="#"><img src="images/facebook.png"></a></li>
-        <li><a href="#"><img src="images/twitter.png"></a></li>
-        <li><a href="#"><img src="images/instagram.png"></a></li>
-      </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="images/facebook.png"></a></li>
+                <li><a href="#"><img src="images/twitter.png"></a></li>
+                <li><a href="#"><img src="images/instagram.png"></a></li>
+            </ul>
     </section>
 
-
+  
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -79,8 +79,6 @@
           menuToggle.classList.toggle('active')
           navigation.classList.toggle('active')
       }
-
-
     </script>
-  </body>
+</body>
 </html>
